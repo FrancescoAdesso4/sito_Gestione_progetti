@@ -1,6 +1,7 @@
 {
     "Auto utilitarie":[
         {
+           "id": 1,
            "nome":"Peugeot 408",
            "potenza" :"129 CV" ,
            "alimentazione": "Benzina",
@@ -8,6 +9,7 @@
            "immagine":"https://www.autoscout24.it/cms-content-assets/5Qsyq6RuU5YkQbinCrdDoe-0d06743c3466aa61b7c08d5b9bb8fd78-as1-1100.webp"
         },
         {
+         "id": 2,
          "nome":"Audi Q8",
          "potenza" :"231 CV" ,
          "alimentazione": "Benzina",
@@ -15,6 +17,7 @@
          "immagine":"https://cdn.motor1.com/images/mgl/NrvvX/s1/abt-audi-q8-tfsi-e-mit-aero-package-2021.webp"
         },
         {
+         "id": 3,
          "nome":"BMW M X5",
          "alimentazione": "Benzina",
          "potenza" :"625 CV" ,
