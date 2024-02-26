@@ -4,12 +4,20 @@ html(lang="en")
     meta(charset='UTF-8')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/home.css')
   body
-    h1 Benvenuto alla pagina principale
-    h2 Seleziona la categoria di auto che desideri visualizzare:
-    ul
-      li
-        a(href='/utilitarie') Auto Utilitarie
-      li
-        a(href='/sportive') Auto Sportive
+    .container
+      .header
+        h1 Benvenuto alla pagina principale
+      .selection
+        h2 Seleziona la categoria di auto che desideri visualizzare:
+      .car-box
+        .person
+          a(href='/utilitarie')
+            img.car-image(src='https://www.classicdriver.com/cdn-cgi/image/format=auto,fit=cover,width=1920,height=1029/sites/default/files/users/169926/cars_images/169926-972136-car-20230621_095420-dsc_0720.jpeg', alt='Auto Utilitarie')
+          a.person-link(href='/utilitarie') Auto Utilitarie
+        .person
+          a(href='/sportive')
+            img.car-image(src='https://store-images.s-microsoft.com/image/apps.2719.14178808588728897.66582aba-4ab8-4861-afe7-7afd676c202b.b95a5c81-5ebc-4a14-b575-620b8d282211?h=253', alt='Auto Sportive')
+          a.person-link(href='/sportive') Auto Sportive
+

@@ -1,8 +1,21 @@
+doctype html
 html(lang="en")
   head
     meta(charset='UTF-8')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/styles.css')
+
   body
-    h1 Benvenuto alla pagina di auto sportive
+    .container
+      .header
+        h1 Benvenuto alla pagina delle auto sportive
+      .selection
+        h2 Seleziona la categoria di auto sportive che desideri visualizzare:
+
+      .car-box
+        each car in sportive
+          .person
+            a(href=`/auto/${car.id}`)
+              img.car-image(src=car.immagine, alt=car.nome)
+            a.person-link(href=`/auto/${car.id}`) #{car.nome} - #{car.prezzo}

@@ -4,7 +4,7 @@ const Aut = require('./json/macchine_utilitarie.json');
 
 const app = express();
 app.set('view engine', 'pug');
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/css'));
 app.get('/', (req, res) => {
 
     res.render('home', {
@@ -15,15 +15,23 @@ app.get('/', (req, res) => {
     });
 });
 
-app.get('/', (req, res) => {
+app.get('/sportive', (req, res) => {
 
-    res.render('home', {
-        title: 'Homepage',
+    res.render('sportive', {
+        title: 'Macchine Sportive',
         utilitarie: Aut['Auto SUV'],
         sportive: Asport['Auto Sportive']
     });
 });
 
+app.get('/utilitarie', (req, res) => {
+
+    res.render('utilitarie', {
+        title: 'Macchine Sportive',
+        utilitarie: Aut['Auto SUV'],
+        sportive: Asport['Auto Sportive']
+    });
+});
 app.listen(3000, function () {
 console.log('Example app listening on port 3000!');
 });
