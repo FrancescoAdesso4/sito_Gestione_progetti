@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/dettagli_auto.css')
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+  body
+    header.header
+      h1= title
+    article.container
+      
+      div
+        img(src=d.immagine, alt=d.nome)
+        h1.profile-name= d.nome
+        p.profile-bio
+          strong Prezzo:
+          | #{d.prezzo}
+          strong Potenza:
+          | #{d.potenza}
+          strong Alimentazione:
+          | #{d.alimentazione}
+        a.button.button-buy(href='/') Torna Alla home

@@ -1,0 +1,75 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px; /* Imposta la larghezza massima del contenitore */
+    margin: 0 auto; /* Centra il contenuto orizzontalmente */
+    padding: 20px;
+    text-align: center; /* Centra il testo */
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.selection {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.car-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Imposta la griglia per adattarsi alla larghezza del contenitore */
+    grid-gap: 20px; /* Aggiunge spazio tra le celle della griglia */
+}
+
+.person {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.person:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.car-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.person-link {
+    display: block;
+    margin-top: 15px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.person-link:hover {
+    color: #1e87f0;
+}

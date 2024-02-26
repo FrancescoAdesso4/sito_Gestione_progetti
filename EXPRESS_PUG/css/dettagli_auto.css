@@ -1,0 +1,62 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px; /* Larghezza massima del contenitore */
+    margin: 0 auto; /* Centrare il contenuto orizzontalmente */
+    padding: 20px;
+    text-align: center; /* Centrare il testo */
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.profile-image {
+    max-width: 100%; /* L'immagine si adatta alla larghezza del suo contenitore */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px; /* Spazio sotto l'immagine */
+}
+
+.profile-name {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.profile-bio {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #525286;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #3a3a5f;
+}
